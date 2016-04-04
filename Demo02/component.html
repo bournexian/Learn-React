@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../lib/react.js"></script>
+    <script src="../lib/react-dom.js"></script>
+    <script src="../lib/browser.min.js"></script>
+</head>
+<body>
+  <div id="container">
+
+  </div>
+  <script type="text/babel">
+    var HelloMessage = React.createClass({
+      render: function(){
+        return <div>Hello {this.props.name}</div>;
+      }
+    });
+
+    ReactDOM.render(<HelloMessage name="Bourne"/>, document.getElementById("container"))
+  </script>
